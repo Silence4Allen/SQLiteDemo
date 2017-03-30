@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.allen.demo.sqlitedemo.activity.MainActivity">
+
+    <Button
+        android:id="@+id/btn_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFF"
+        android:onClick="createDB"
+        android:text="创建数据库"/>
+
+    <Button
+        android:id="@+id/btn_querySimpleCursorAdapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#00FFFF"
+        android:onClick="onClick"
+        android:text="SQL语句查询(SimpleCursorAdapter)"/>
+
+    <Button
+        android:id="@+id/btn_queryCursorAdapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#00FFFF"
+        android:onClick="onClick"
+        android:text="SQL语句查询(CursorAdapter)"/>
+
+    <Button
+        android:id="@+id/btn_queryApi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#00FFFF"
+        android:onClick="onClick"
+        android:text="API语句查询"/>
+
+    <Button
+        android:id="@+id/btn_queryWithPaging"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#00FFFF"
+        android:onClick="onClick"
+        android:text="分页展示"/>
+
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+    </ListView>
+</LinearLayout>
